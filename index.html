@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Comprensión Lectora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="titleInit">Test Número 16</Nav></h2>
+        <p id="paragraphInit">
+            Este test busca medir tu velocidad y comprensión
+            lectora.<br>
+            Te recomendamos que lo hagas en un ambiente
+            calmado, sin distracciones y con buena iluminación.<br>
+            Esta lectura la debes hacer basado en las técnicas
+            que ya hayas empezado a usar. En las primeras
+            semanas, no debes preocuparte mucho por la
+            comprensión lectora, ya que ese es un proceso que se
+            va a ir dando paulatinamente.<br>
+            Cuando des clic en INICIAR se te presentará la lectura
+            y el sistema llevará un cronómetro que medirá tu
+            velocidad. Al finalzar de leer todo el texto debes dar
+            clic en el botón TERMINAR.<br>
+        </p>
+        <button id="startButton">Iniciar</button>
+        <div id="textContainer" class="hidden">
+            <p id="textToRead">
+                A gritos con los mosquitos
+                <br><br>
+                La casa de los señores Gri Tonzio era una casa de locos. La mamá, la señora Bocca Gri Tonzio, era incapaz de pedir algo sin alzar la voz; pero sus gritos parecían susurros al lado de los de su hija, la pequeña Chilla Gri Tonzio, la gente decía que había hecho huir a todas las cucarachas y bichos del pueblo con un único chillido. No creo que estuvieran exagerando, porque la verdad es que nadie podía descansar hasta que la niña se dormía: todo lo pedía a gritos. Y luego estaba el papá, don Cayo Gri Tonzio, un magnífico inventor chiflado que no había inventado nada en años. Normal; con tanto ruido, no podía concentrarse.
+                <br><br>
+                Por eso tuvo que inventar los mosquizampa: unos increíbles mosquitos modificados genéticamente para comerse los gritos. Funcionaban tan bien, que nadie se enteró el día que los inventó: se tragaron todos sus gritos de alegría, y fue como si no hubiera pasado nada. Eso sí, los gritos están hechos de aire y alimentan poco, así que los mosquizampa no tardaron en escaparse en busca de comida. Pero no tuvieron que viajar mucho, porque en la planta de abajo encontraron a Bocca y Chilla, y solo con los gritos de la madre y la niña tenían para ponerse gordos como moscas.
+                <br><br>
+                Se pegaban por comerse sus gritos casi antes de que salieran de sus bocas, así que durante días nadie les oyó decir una sola palabra. La gente solo las veía rodeadas por una nube de mosquitos, y haciendo como que gritaban furiosas.
+                <br><br>
+                —Pobrecitas —pensaban— al final se han quedado sin voz.
+                <br><br>
+                —Pues es un descanso para todos. No hay quien aguante su forma de decir las cosas.
+                <br><br>
+                Pero sus gargantas estaban perfectas. La propia Chilla lo descubrió cuando comenzó a quedarse sin fuerzas después de varios días sin comer.
+                <br><br>
+                Nadie sabía que tenía hambre, porque pedía la comida con gritos tan brutales que los mosquizampa que los probaban se morían de la dificultad.
+                <br><br>
+                —Tengo hambre —dijo muy bajito, ya casi sin fuerzas.
+                <br><br>
+                —Vaya, ¡qué voz tan bonita tienes! —dijo la vecina, mientras le hacía un bocadillo— nunca te había oído hablar.
+                <br><br>
+                Aliviada, Chilla descubrió que, cuando hablaba más bajo, las palabras salían perfectas de su boca, la gente admiraba su bella voz y todos la trataban de una forma mucho más amable. Y es que, hasta ese día, la gente solo le hacía caso de mala gana para que se callara. Cuando se lo contó a su mamá, ella también dejó de gritar, y ambas comprobaron felices que la vida podía ser más alegre y tranquila. Incluso el señor Cayo Gri Tonzio, gracias a aquella nueva calma, pudo comenzar una increíble colección de inventos que llegó a ser famosa en todo el mundo.
+                <br><br>
+                ¿Y los mosquizampa? Bueno, cuando Chilla y Bocca dejaron sus gritos, adelgazaron hasta hacerse casi invisibles. A punto estuvieron de morir de hambre, pero pronto descubrieron que el mundo está lleno de gente gritona y nunca les faltará comida. Eso sí, espero que ustedes sean listos y no sean sus gritos los que los alimenten.
+                <br><br>
+                <a href="https://cuentosparadormir.com/infantiles/cuento/gritos-con-los-mosquitos">https://cuentosparadormir.com/infantiles/cuento/gritos-con-los-mosquitos</a> — Escritor Pedro Pablo Sacristán – 520 palabras
+            </p>
+                         
+            <div id="timer">Tiempo transcurrido: <span id="timerValue">0</span> segundos</div>
+            <button id="finishButton">Terminar</button>
+        </div>
+        <div id="questionnaire" class="hidden">
+            <h2>Test de Comprensión Lectora</h2>
+            <form id="quizForm">
+                <ol id="questionList">
+                    <!-- Las preguntas se añadirán aquí dinámicamente con JavaScript -->
+                </ol>
+                <button type="submit">Terminar</button>
+            </form>
+        </div>
+        <div id="results" class="hidden">
+            <h2>Resultados</h2>
+            <div id="wordCount">Palabras leídas: <span id="wordCountValue"></span></div>
+            <div id="readingSpeed">Velocidad de lectura: <span id="readingSpeedValue"></span> palabras por minuto</div>
+            <div id="comprehension">Comprensión lectora: <span id="comprehensionValue"></span>%</div>
+            <div id="timeResult">Tiempo transcurrido: <span id="timeResultValue"></span> segundos</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
